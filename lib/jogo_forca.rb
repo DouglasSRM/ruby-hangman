@@ -8,9 +8,10 @@ class JogoForca
 		erros = 0
 		saida = ""
 
+		puts "Letras: "
+		puts saida
+
 		until acertou || (erros == 6) do
-
-
 			File.open(File.expand_path("../figs/fig#{erros}.txt", __FILE__), 'r') do |arq|
 				while line = arq.gets
 					puts line
@@ -22,6 +23,8 @@ class JogoForca
 
 			if input.length == 0
 				system('cls')
+				puts "Letras: #{letras.join(", ")}"
+				puts saida
 				next #Reseta o loop until
 			end
 
@@ -39,7 +42,6 @@ class JogoForca
 			end
 
 			puts "Letras: #{letras.join(", ")}"
-
 			saida = ""
 			errou = true
 			palavra.each_char do |l|
