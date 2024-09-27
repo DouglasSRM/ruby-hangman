@@ -69,7 +69,7 @@ class JogoForca
 			acertou = (saida == palavra)
 			if acertou
 				puts "Parabéns! Você acertou a palavra: #{palavra}"
-      end
+						end
 		end
 	end
 
