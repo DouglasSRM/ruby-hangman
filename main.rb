@@ -2,7 +2,7 @@ require_relative 'lib/jogo_forca'
 require_relative 'lib/jogo'
 
 jogo = JogoForca.new
-Jogo.inicializar
+#Jogo.inicializar
 
 repetir = true
 
