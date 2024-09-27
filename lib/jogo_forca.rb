@@ -68,8 +68,13 @@ class JogoForca
 
 			acertou = (saida == palavra)
 			if acertou
+				File.open(File.expand_path("../figs/fig7.txt", __FILE__), 'r') do |arq|
+					while line = arq.gets
+						puts line
+					end
+				end
 				puts "Parabéns! Você acertou a palavra: #{palavra}"
-						end
+			end
 		end
 	end
 
