@@ -11,5 +11,3 @@ until c == 7
 
 	c+=1
 end
-
-

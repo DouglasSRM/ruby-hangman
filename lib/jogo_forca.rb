@@ -27,11 +27,9 @@ class JogoForca
 				puts saida
 				next #Reseta o loop until
 			end
-
 			system('cls')
 
 			letra_atual = input[0]
- 
 			if letras.include?(letra_atual)
 				puts 'Letra Repetida'
 				puts "Letras: #{letras.join(", ")}"
@@ -47,7 +45,6 @@ class JogoForca
 			palavra.each_char do |l|
 				if letras.include?(l)
 					saida += l
-
 				else
 					saida += '_'
 				end
@@ -71,8 +68,10 @@ class JogoForca
 
 			acertou = (saida == palavra)
 			if acertou
-        		puts "Parabéns! Você acertou a palavra: #{palavra}"
-        	end
+				puts "Parabéns! Você acertou a palavra: #{palavra}"
+      end
 		end
 	end
+
+
 end

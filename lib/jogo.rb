@@ -4,10 +4,8 @@ require 'tty-spinner'
 module Jogo
   def self.inicializar
     system('cls')
-
     cursor = TTY::Cursor
     print cursor.move_to(0, 5)
-
     spinner = TTY::Spinner.new("[:spinner] Carregando ...", format: :pulse_2)
     spinner.auto_spin
     sleep(2)
