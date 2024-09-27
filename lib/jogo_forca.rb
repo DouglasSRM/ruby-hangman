@@ -22,12 +22,12 @@ class JogoForca
 			input = gets.chomp
 
 			if input.length == 0
-				system('cls')
+				system('clear')
 				puts "Letras: #{letras.join(", ")}"
 				puts saida
 				next #Reseta o loop until
 			end
-			system('cls')
+			system('clear')
 
 			letra_atual = input[0]
 			if letras.include?(letra_atual)
@@ -69,7 +69,7 @@ class JogoForca
 			acertou = (saida == palavra)
 			if acertou
 				puts "Parabéns! Você acertou a palavra: #{palavra}"
-						end
+			end
 		end
 	end
 

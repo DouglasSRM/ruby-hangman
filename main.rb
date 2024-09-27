@@ -7,7 +7,7 @@ Jogo.inicializar
 repetir = true
 
 while repetir
-	system('cls')
+	system('clear')
 	jogo.adivinhar
 	repetir = Jogo.jogar_novamente
 end
